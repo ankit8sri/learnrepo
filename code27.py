@@ -2,10 +2,15 @@
 
 from __future__ import print_function
 
-for i in range(9):
-	for j in range(9):
-		if( (i - j < 5) & (j - i < 5 ) &  (i + j > 3) & (i + j < 13)  ):
-			print( "*",  end=" ")
-		else:
-			print (" ", end=" ")
-	print("")
+#provide an odd value eg. 3,5,7,9.. etc
+W = 9
+M = (W + 1)/2
+L = W - M - 1
+R = W + M - 1
+for i in range(W):
+        for j in range(W):
+                if( (i - j < M ) & (j - i < M ) &  (i + j > L) & (i + j < R)  ):
+                        print( "*",  end=" ")
+                else:
+                        print (" ", end=" ")
+        print("")
