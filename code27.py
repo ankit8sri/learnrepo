@@ -3,7 +3,7 @@
 from __future__ import print_function
 
 #provide an odd value eg. 3,5,7,9.. etc
-W = 9
+W = 19
 M = (W + 1)/2
 L = W - M - 1
 R = W + M - 1
